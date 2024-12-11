@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Playfair Display', serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('Background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;  
+}
+a h1 {
+    font-family: 'filmotype-yukon', sans-serif;
+    font-size: 3em;  
+    color: white;    
+    margin: 0;       
+    text-transform: uppercase;  
+}
+h2 {
+    font-size: 8em; 
+    font-weight: normal; 
+    font-family: 'nori', sans-serif;
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+.anagapesis-title {
+    font-size: 10em; 
+    font-family: 'nori', sans-serif;
+    font-weight: normal;
+    margin-top: -100px;
+}
+.tracklist {
+    font-size: 6rem !important;  
+    font-weight: normal; 
+}
+.background {
+    font-size: 1.25em;  
+    line-height: 1.6;  
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 1.2em;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+.intro {
+    text-align: center;
+    padding: 80px 20px;
+    margin-left: 270px;
+}
+
+.album-artwork img {
+    max-width: 80%;  
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.album-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    width: 80%;  
+}
+
+.album-details h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.album-details ul {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.album-details li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.music-player {
+    margin-top: 20px;
+}
+
+.merchandise {
+    text-align: center;
+    padding: 50px 20px;
+    margin-left: 270px;
+}
+
+.merch-item {
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.merch-item img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.merch-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.merch-item button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.merch-item button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    .intro, .merchandise {
+        margin-left: 0;
+    }
+
+    .merch-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .album-cover img {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.music-preview {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.music-preview audio {
+    width: 100%;
+    max-width: 500px;
+    background-color: #121212;
+    border: 1px solid #f39c12;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    outline: none;
+    margin-top: 20px;
+}
+
+.music-preview audio::-webkit-media-controls-panel {
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+}
+
+.music-preview audio::-webkit-media-controls-play-button,
+.music-preview audio::-webkit-media-controls-volume-slider {
+    background-color: #f39c12;
+}
+
+.music-preview audio::-webkit-media-controls-volume-slider {
+    border-radius: 5px;
+}
+
+.music-preview audio::-webkit-media-controls-volume {
+    background-color: #121212;
+}
+
+.music-preview audio::-webkit-media-controls-current-time-display,
+.music-preview audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+.music-preview audio::-webkit-media-controls-seek-backward-button,
+.music-preview audio::-webkit-media-controls-seek-forward-button {
+    background-color: #f39c12;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.album-info {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.track-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center; /* Center the tracklist */
+}
+
+.track-list li {
+    margin-bottom: 10px;
+}
+
+.music-preview .audio-player {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.album-info p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.album-artwork, .album-cover {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+.album-artwork img, .album-cover img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    display: block; 
+    margin: 0 auto; 
+}
